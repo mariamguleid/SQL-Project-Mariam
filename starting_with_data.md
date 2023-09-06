@@ -77,11 +77,11 @@ ORDER BY year
 
 Answer:
 
-
+```sql
 YEAR    TOTALPAGEVIEWS
 2016	35018
 2017	33461
-
+```
 
 
 Question 5: Which country and city spent the most time on a site?
