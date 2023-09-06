@@ -12,17 +12,17 @@ LIMIT 10
 Answer: 
 
 ```sql
-PRODUCTSKU          NAME                                            TOTAL_ORDERED
-"GGOEGOAQ012899"	"Ballpoint LED Light Pen"	                    456
-"GGOEGDHC074099"	" 17oz Stainless Steel Sport Bottle"	        334
-"GGOEGOCB017499"	"Leatherette Journal"	                        319
-"GGOEGOCC077999"	" Spiral Journal with Pen"	                    290
-"GGOEGFYQ016599"	"Foam Can and Bottle Cooler"	                253
-"GGOEGOCB078299"	" Leather Journal-Black"	                    250
-"GGOEGHPJ080310"	" Blackout Cap"	                                189
-"GGOEADHH073999"	"Android 17oz Stainless Steel Sport Bottle"	    167
-"GGOEGAAX0037"	    "Sunglasses"	                                146
-"GGOENEBQ078999"	" Cam Outdoor Security Camera - USA"	        112
+PRODUCTSKU             NAME                                            TOTAL_ORDERED
+"GGOEGOAQ012899"	   "Ballpoint LED Light Pen"	                    456
+"GGOEGDHC074099"	   "17oz Stainless Steel Sport Bottle"	            334
+"GGOEGOCB017499"	   "Leatherette Journal"	                        319
+"GGOEGOCC077999"	   "Spiral Journal with Pen"	                    290
+"GGOEGFYQ016599"	   "Foam Can and Bottle Cooler"	                    253
+"GGOEGOCB078299"	   "Leather Journal-Black"	                        250
+"GGOEGHPJ080310"	   "Blackout Cap"	                                189
+"GGOEADHH073999"	   "Android 17oz Stainless Steel Sport Bottle"	    167
+"GGOEGAAX0037"	       "Sunglasses"	                                    146
+"GGOENEBQ078999"	   "Cam Outdoor Security Camera - USA"	            112
 ```
 
 
@@ -56,17 +56,17 @@ AND sentimentmagnitude > 0
 Answer:
 
 ```sql
-NAME                                            SENTIMENTSCORE     SENTIMENTMAGNITUDE
-" Women's Colorblock Tee White"	                0.8	               2
-" Men's Quilted Insulated Vest Black"	        0.8	               2
-" Sunglasses"	                                0.5	               0.5
-"Red Shine 15 oz Mug"	                        0.3	               0.5
-"Recycled Paper Journal Set"	                0.3	               0.5
-" Women's Scoop Neck Tee Black"	                0.3	               0.5
-" Onesie Green"	                                0.3	               0.5
-" Learning Thermostat 3rd Gen-USA - White"	    0.3	               0.5
-"Android Stretch Fit Hat"	                    0.3	               0.5
-" Men's Quilted Insulated Vest Battleship Grey"	0.3	               0.5
+NAME                                              SENTIMENTSCORE          SENTIMENTMAGNITUDE
+" Women's Colorblock Tee White"	                  0.8	                  2
+" Men's Quilted Insulated Vest Black"	          0.8	                  2
+" Sunglasses"	                                  0.5	                  0.5
+"Red Shine 15 oz Mug"	                          0.3	                  0.5
+"Recycled Paper Journal Set"	                  0.3	                  0.5
+" Women's Scoop Neck Tee Black"	                  0.3	                  0.5
+" Onesie Green"	                                  0.3	                  0.5
+" Learning Thermostat 3rd Gen-USA - White"	      0.3	                  0.5
+"Android Stretch Fit Hat"	                      0.3	                  0.5
+" Men's Quilted Insulated Vest Battleship Grey"	  0.3	                  0.5
 ```
 
 Question 4: Get the the amount of page views by year. 
