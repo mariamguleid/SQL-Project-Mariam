@@ -18,6 +18,7 @@ LIMIT 10
 
 Answer:
 
+```sql
 CITY             COUNTRY
 "Kharagpur"	     "India"
 "Stanford"	     "United States"
@@ -29,6 +30,7 @@ CITY             COUNTRY
 "Rome"	         "Italy"
 "Berkeley"	     "United States"
 "San Francisco"	 "France"
+```
 
 
 
@@ -52,7 +54,7 @@ GROUP BY city, country
 
 Answer:
 
-
+```sql
 CITY          COUNTRY          AVG
 "Adelaide"	  "Australia"	   1.00000000000000000000
 "Ahmedabad"	  "India"	       12.0000000000000000
@@ -64,7 +66,7 @@ CITY          COUNTRY          AVG
 "Ann Arbor"	  "United States"  50.0000000000000000
 "Antalya"	  "Turkey"	       1.00000000000000000000
 "Antwerp"	  "Belgium"	       2.0000000000000000
-
+```
 
 
 
@@ -83,7 +85,7 @@ ORDER BY country
 
 Answer:
 
-
+```sql
 COUNTRY     V2PRODUCTCATEGORY
 "Albania"	"Home/Shop by Brand/YouTube/"
 "Albania"	"Home/Apparel/Men's/"
@@ -95,7 +97,7 @@ COUNTRY     V2PRODUCTCATEGORY
 "Argentina"	"Home/Shop by Brand/Google/"
 "Argentina"	"Home/Bags/Backpacks/"
 "Argentina"	"Home/Shop by Brand/Android/"
-
+```
 
 
 
@@ -105,7 +107,7 @@ COUNTRY     V2PRODUCTCATEGORY
 **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
 
 
-SQL Queries:
+SQL Queries: 
 
 
 

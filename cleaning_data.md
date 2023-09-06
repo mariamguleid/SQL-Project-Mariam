@@ -5,6 +5,8 @@ Removed products from sales_by_sku where total_ordered was 0 because the product
 
 Made productsku column in sales_by_sku a foreign key to link sales_by_sku and product tables. 
 
+
+
 Queries:
 Below, provide the SQL queries you used to clean your data.
 
