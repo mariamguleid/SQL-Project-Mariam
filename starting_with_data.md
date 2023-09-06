@@ -41,9 +41,9 @@ Answer:
 ```sql
 PRODUCTPRICE    V2PRODUCTNAME                                               V2PRODUCTCATEGORY
 298000000	    "Nest® Learning Thermostat 3rd Gen-USA - Stainless Steel"	"Nest-USA"
+```
 
 Question 3: List only the products that have a sentiment score and sentiment magnitude. 
-```
 
 SQL Queries: 
 ```sql
