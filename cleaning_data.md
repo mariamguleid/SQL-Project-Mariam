@@ -1,4 +1,5 @@
 What issues will you address by cleaning the data?
+
 Changed city and country column string values 'not available in demo dataset' and '(not set)' to null instead
 
 Removed products from sales_by_sku where total_ordered was 0 because the products should have been ordered atleast once.
