@@ -11,6 +11,7 @@ LIMIT 10
 ```
 Answer: 
 
+```sql
 PRODUCTSKU          NAME                                            TOTAL_ORDERED
 "GGOEGOAQ012899"	"Ballpoint LED Light Pen"	                    456
 "GGOEGDHC074099"	" 17oz Stainless Steel Sport Bottle"	        334
@@ -22,7 +23,7 @@ PRODUCTSKU          NAME                                            TOTAL_ORDERE
 "GGOEADHH073999"	"Android 17oz Stainless Steel Sport Bottle"	    167
 "GGOEGAAX0037"	    "Sunglasses"	                                146
 "GGOENEBQ078999"	" Cam Outdoor Security Camera - USA"	        112
-
+```
 
 
 Question 2: What is the most expensive product? Include name, category, and the total page views for each.
@@ -37,10 +38,12 @@ LIMIT 1
 
 Answer:
 
+```sql
 PRODUCTPRICE    V2PRODUCTNAME                                               V2PRODUCTCATEGORY
 298000000	    "Nest® Learning Thermostat 3rd Gen-USA - Stainless Steel"	"Nest-USA"
 
 Question 3: List only the products that have a sentiment score and sentiment magnitude. 
+```
 
 SQL Queries: 
 ```sql
@@ -52,6 +55,7 @@ AND sentimentmagnitude > 0
 
 Answer:
 
+```sql
 NAME                                            SENTIMENTSCORE     SENTIMENTMAGNITUDE
 " Women's Colorblock Tee White"	                0.8	               2
 " Men's Quilted Insulated Vest Black"	        0.8	               2
@@ -63,7 +67,7 @@ NAME                                            SENTIMENTSCORE     SENTIMENTMAGN
 " Learning Thermostat 3rd Gen-USA - White"	    0.3	               0.5
 "Android Stretch Fit Hat"	                    0.3	               0.5
 " Men's Quilted Insulated Vest Battleship Grey"	0.3	               0.5
-
+```
 
 Question 4: Get the the amount of page views by year. 
 
@@ -96,5 +100,7 @@ LIMIT 1
 
 Answer: 
 
+```sql
 COUNTRY           CITY          TIME
 "United States"	  "San Jose"	3192410
+```
