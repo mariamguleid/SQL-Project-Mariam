@@ -22,12 +22,12 @@ CITY             COUNTRY
 "Stanford"	     "United States"
 "Mexico City"    "Mexico"
 "Hayward"	     "United States"
-"Poznan"	     "Poland"
-"San Salvador"	 "El Salvador"
+"Poznan"	        "Poland"
+"San Salvador"	  "El Salvador"
 "Coventry"	     "United Kingdom"
-"Rome"	         "Italy"
+"Rome"	        "Italy"
 "Berkeley"	     "United States"
-"San Francisco"	 "France"
+"San Francisco"  "France"
 ```
 
 
@@ -53,17 +53,17 @@ GROUP BY city, country
 Answer:
 
 ```sql
-CITY          COUNTRY          AVG
-"Adelaide"	  "Australia"	   1.00000000000000000000
-"Ahmedabad"	  "India"	       12.0000000000000000
-"Akron"	      "United States"  1.00000000000000000000
-"Alexandria   "Egypt"	       1.00000000000000000000
-"Amã"	      "Jordan"	       1.00000000000000000000
-"Amsterdam"	  "Netherlands"	   11.0000000000000000
-"Amsterdam"	  "United States"  1.00000000000000000000
-"Ann Arbor"	  "United States"  50.0000000000000000
-"Antalya"	  "Turkey"	       1.00000000000000000000
-"Antwerp"	  "Belgium"	       2.0000000000000000
+CITY          COUNTRY              AVG
+"Adelaide"	  "Australia"	        1.00000000000000000000
+"Ahmedabad"	  "India"	           12.0000000000000000
+"Akron"	     "United States"      1.00000000000000000000
+"Alexandria   "Egypt"	           1.00000000000000000000
+"Amã"	        "Jordan"	           1.00000000000000000000
+"Amsterdam"	  "Netherlands"	     11.0000000000000000
+"Amsterdam"	  "United States"      1.00000000000000000000
+"Ann Arbor"	  "United States"      50.0000000000000000
+"Antalya"	  "Turkey"	           1.00000000000000000000
+"Antwerp"	  "Belgium"	           2.0000000000000000
 ```
 
 
@@ -161,12 +161,12 @@ United States                  2390950000
 Bangaladesh                    [null]
 Vanezuela                      [null]
 Luxembourg                     [null]
-Sweden					       [null]
-Montenegro					   [null]
-Uganda						   [null]
-Jordan						   [null]
-Dominican Republic			   [null]
-Cambodia					   [null]
+Sweden					          [null]
+Montenegro					       [null]
+Uganda						       [null]
+Jordan						       [null]
+Dominican Republic			    [null]
+Cambodia					          [null]
 ```
 
 
