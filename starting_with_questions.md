@@ -156,18 +156,19 @@ countries generated no revenue.
 
 Top 10 from the answer:
 ```sql
-COUNTRY                        TOTAL_TRANSACTION_REVENUE
-United States                  2390950000
-Bangaladesh                    [null]
-Vanezuela                      [null]
-Luxembourg                     [null]
-Sweden					          [null]
-Montenegro					       [null]
-Uganda						       [null]
-Jordan						       [null]
-Dominican Republic			    [null]
-Cambodia					          [null]
+COUNTRY                TOTAL_TRANSACTION_REVENUE
+United States          2390950000
+Bangaladesh            [null]
+Vanezuela              [null]
+Luxembourg             [null]
+Sweden                 [null]
+Montenegro             [null]
+Uganda                 [null]
+Jordan                 [null]
+Dominican Republic     [null]
+Cambodia               [null]
 ```
+
 
 
 
