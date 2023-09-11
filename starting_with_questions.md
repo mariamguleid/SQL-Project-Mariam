@@ -124,7 +124,7 @@ ORDER BY num_of_transactions DESC
 
 
 Answer: I was able to find the top selling product per country. I only showed the top 10 answers from my result for simplicity.
-
+```sql
 num_of_transactions            country                v2productname
 7                              United States          "Nest® Learning Thermostat 3rd Gen-USA - Stainless Steel"
 5                              United States          "Nest® Cam Outdoor Security Camera - USA"
@@ -136,7 +136,7 @@ num_of_transactions            country                v2productname
 2                              United States          "Google Sunglasses"
 2                              United States          "Nest® Protect Smoke + CO White Wired Alarm-USA"
 2                              United States          "Nest® Protect Smoke + CO White Battery Alarm-USA"
-
+```
 
 
 
@@ -157,7 +157,7 @@ Answer: From the answer, I was able to see that United States generated the most
 countries generated no revenue.
 
 Top 10 from the answer:
-
+```sql
 COUNTRY                     TOTAL_TRANSACTION_REVENUE
 United States               2390950000
 Bangaladesh                 [null]
@@ -169,7 +169,7 @@ Uganda						[null]
 Jordan						[null]
 Dominican Republic			[null]
 Cambodia					[null]
-
+```
 
 
 
