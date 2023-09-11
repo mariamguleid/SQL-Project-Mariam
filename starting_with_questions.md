@@ -74,29 +74,30 @@ CITY          COUNTRY          AVG
 **Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
 
 
+
 SQL Queries: 
 
 ```sql
-SELECT country, v2productcategory
+SELECT country, COUNT(country) as count_of_countries, v2productcategory
 FROM all_sessions
-GROUP BY v2productcategory, country
-ORDER BY country
+group by country, v2productcategory
+ORDER BY count_of_countries DESC
 ```
 
-Answer:
+Answer: I counted the occurances of a country per productcategory. Below I only shared the first 10 results I got.
 
 ```sql
-COUNTRY     V2PRODUCTCATEGORY
-"Albania"	"Home/Shop by Brand/YouTube/"
-"Albania"	"Home/Apparel/Men's/"
-"Albania"	"Home/Shop by Brand/Google/"
-"Algeria"	"Home/Electronics/"
-"Algeria"	"Home/Shop by Brand/YouTube/"
-"Algeria"	"Home/Apparel/Kid's/"
-"Argentina"	"Home/Office/Notebooks & Journals/"
-"Argentina"	"Home/Shop by Brand/Google/"
-"Argentina"	"Home/Bags/Backpacks/"
-"Argentina"	"Home/Shop by Brand/Android/"
+COUNTRY                COUNT_OF_COUNTRIES              V2PRODUCTCATEGORY
+United States          926                             "Home/Apparel/Men's/Men's-T-Shirts/"
+United States          808                             "Home/Shop by Brand/YouTube/"
+United States          563                             "Home/Electronics/"
+United States          554                             "Home/Apparel/"
+United States          497                             "Home/Shop by Brand/Google/"
+United States          401                             "Home/Office/"
+United States          400                             "Home/Apparel/Men's/Men's-Outerwear/"
+United States          387                             "Home/Nest/Nest-USA/"
+United States          315                             "Home/Drinkware/"
+United States          289                             "Home/Bags/"
 ```
 
 
@@ -108,11 +109,34 @@ COUNTRY     V2PRODUCTCATEGORY
 
 
 SQL Queries: 
+```sql
+SELECT num_of_transactions, country, v2productname
+FROM
+(SELECT country, v2productname, count(transactions) AS num_of_transactions
+FROM all_sessions
+GROUP BY country, v2productname
+ORDER BY num_of_transactions DESC) counting_transactions
+WHERE num_of_transactions != 0
+ORDER BY num_of_transactions DESC
+```
 
 
 
 
-Answer:
+Answer: I was able to find the top selling product per country. I only showed the top 10 answers from my result for simplicity.
+
+num_of_transactions            country                v2productname
+7                              United States          "Nest® Learning Thermostat 3rd Gen-USA - Stainless Steel"
+5                              United States          "Nest® Cam Outdoor Security Camera - USA"
+3                              United States          "Nest® Cam Indoor Security Camera - USA"
+3                              United States          "Nest® Learning Thermostat 3rd Gen-USA"
+2                              United States          "Nest® Learning Thermostat 3rd Gen-USA - White"
+2                              United States          "Google Men's 100% Cotton Short Sleeve Hero Tee Navy"
+2                              United States          "Reusable Shopping Bag"
+2                              United States          "Google Sunglasses"
+2                              United States          "Nest® Protect Smoke + CO White Wired Alarm-USA"
+2                              United States          "Nest® Protect Smoke + CO White Battery Alarm-USA"
+
 
 
 
@@ -121,10 +145,33 @@ Answer:
 **Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
 SQL Queries:
+```sql
+SELECT country, SUM(transactionrevenue) AS total_transaction_revenue
+FROM all_sessions
+WHERE country IS NOT NULL
+GROUP BY country
+ORDER BY total_transaction_revenue
+```
+
+Answer: From the answer, I was able to see that United States generated the most revenue and the other 
+countries generated no revenue.
+
+Top 10 from the answer:
+
+COUNTRY                     TOTAL_TRANSACTION_REVENUE
+United States               2390950000
+Bangaladesh                 [null]
+Vanezuela                   [null]
+Luxembourg                  [null]
+Sweden					    [null]
+Montenegro					[null]
+Uganda						[null]
+Jordan						[null]
+Dominican Republic			[null]
+Cambodia					[null]
 
 
 
-Answer:
 
 
 
