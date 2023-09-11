@@ -1,5 +1,3 @@
-What issues will you address by cleaning the data?
-
 Changed columns with string values 'not available in demo dataset' and '(not set)' to null instead
 
 Removed products from sales_by_sku where total_ordered was 0 because the products should have been ordered atleast once.
@@ -11,7 +9,7 @@ Dropped columns that had no values
 Checked if columns made sense and had values in them.
 
 Queries:
-Below, provide the SQL queries you used to clean your data.
+
 
 ```sql
 UPDATE all_sessions SET city = NULL WHERE city = 'not available in demo dataset'

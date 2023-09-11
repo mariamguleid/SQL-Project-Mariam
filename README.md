@@ -19,7 +19,7 @@ The most expensive product (Nest® Learning Thermostat 3rd Gen-USA - Stainless S
 I was not able to link some tables together because some of the tables (all_sessions, analytics) lacked any unique identifiers.
 I also was not able to link 'all_sessions' table to 'products' table due to the 'productsku' column having values not existing in the 'sku' column in products. 
 Therefore, 'all_sessions' table contains products that we don't even have listed in the 'products' table. The 'all_sessions' table should've had a primary key (visitid contained duplicates). A lot of the values in various columns were left 'null',
-making it hard to get important information aswell as values '(not set)' and 'not available in demo dataset' were put toindicate the absence of a value. 
+making it hard to get important information aswell as values '(not set)' and 'not available in demo dataset' were put to indicate the absence of a value. 
 The table 'all_sessions' consisted of information unnecessary to be in the table, such as 'productprice' which should have been in the 'products' table.
 
 Also, the 'productrevenue', 'transactionrevenue' and 'productquantity' times 'productprice' doesn't match which indicates we are dealing with inaccurate data.

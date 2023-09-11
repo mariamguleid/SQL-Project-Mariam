@@ -1,5 +1,3 @@
-What are your risk areas? Identify and describe them.
-
 Tables were missing unique identifiers and therefore was unable to link some tables.
 When importing data, I had to ensure the rows in my table matched the columns in the csv file.
 Different formatting made it hard to filter the data with queries so that needed to be addressed.
